@@ -1,12 +1,12 @@
 import React from 'react';
 import './Navigation.css';
 
-function Navigation({ onNavigate, activeSection }) {
+function Navigation({ onNavigate, activeSection, darkMode, setDarkMode }) {
   return (
-    <nav className="navbar">
+    <nav className="navbar" data-theme={darkMode ? 'dark' : 'light'}>
       <div className="container navbar-wrapper">
         <div className="logo">
-          <h4 style={{ margin: 0, color: 'var(--text-dark)' }}>JSuyog</h4>
+          <h4 style={{ margin: 0, color: 'var(--text-dark)' }}>Suyog</h4>
         </div>
         <ul className="nav-links">
           <li>
@@ -42,9 +42,17 @@ function Navigation({ onNavigate, activeSection }) {
             </button>
           </li>
           <li>
-            <a href="#resume" className="nav-btn">
-              Resume
-            </a>
+            <a href="#resume" className="nav-btn">Resume</a>
+          </li>
+          <li>
+            <button 
+              className="dark-mode-btn"
+              onClick={() => setDarkMode(!darkMode)}
+              title={darkMode ? 'Light Mode' : 'Dark Mode'}
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
           </li>
         </ul>
       </div>

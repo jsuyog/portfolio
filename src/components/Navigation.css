@@ -6,6 +6,7 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar-wrapper {
@@ -18,11 +19,17 @@
   flex-shrink: 0;
 }
 
+.logo h4 {
+  color: var(--text-dark) !important;
+  margin: 0 !important;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 40px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links button {
@@ -41,34 +48,51 @@
 
 .nav-links button:hover,
 .nav-links button.active {
-  color: var(--accent-color);
+  color: var(--text-dark);
 }
 
 .nav-links button.active {
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--text-dark);
 }
 
 .nav-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--accent-color);
-  color: white;
+  color: var(--bg-light);
   border-radius: 6px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-btn:hover {
-  background-color: var(--text-dark);
+  opacity: 0.8;
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+}
+
+.dark-mode-btn:hover {
+  transform: scale(1.2) rotate(20deg);
 }
 
 @media (max-width: 768px) {
   .nav-links {
     gap: 20px;
-    flex-wrap: wrap;
   }
 
   .nav-links button {
@@ -78,5 +102,9 @@
   .nav-btn {
     padding: 8px 16px;
     font-size: 10px;
+  }
+
+  .dark-mode-btn {
+    font-size: 18px;
   }
 }

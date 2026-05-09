@@ -16,6 +16,8 @@
   align-items: center;
 }
 
+
+
 .resume-placeholder {
   width: 100%;
   max-width: 400px;
@@ -73,6 +75,8 @@
   border: 1px solid var(--border-color);
 }
 
+
+
 .resume-actions h3 {
   margin-bottom: 12px;
   font-size: 28px;
@@ -83,6 +87,19 @@
   margin-bottom: 24px;
   color: var(--text-light);
   line-height: 1.8;
+}
+
+[data-theme="dark"] .resume-actions p {
+  color: #a0a0a0;
+}
+
+[data-theme="dark"] .resume-actions {
+  background-color: #242424;
+  border-color: #404040;
+}
+
+[data-theme="dark"] .resume-actions h3 {
+  color: #ffffff;
 }
 
 .btn-download {
@@ -102,6 +119,17 @@
 .btn-download:hover {
   background-color: white;
   color: var(--accent-color);
+}
+
+[data-theme="dark"] .btn-download {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #ffffff;
+}
+
+[data-theme="dark"] .btn-download:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 .btn-download .icon {
@@ -146,4 +174,37 @@
   .btn-download {
     padding: 14px 28px;
   }
+}
+
+[data-theme="dark"] .resume-section {
+  background-color: #242424;
+}
+
+[data-theme="dark"] .resume-actions {
+  background-color: #242424;
+  border-color: #404040;
+}
+
+[data-theme="dark"] .resume-actions h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .resume-actions p {
+  color: #a0a0a0;
+}
+
+[data-theme="dark"] .resume-placeholder {
+  background-color: #242424;
+  border-color: #404040;
+}
+
+[data-theme="dark"] .btn-download {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #ffffff;
+}
+
+[data-theme="dark"] .btn-download:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }

@@ -21,7 +21,7 @@ function Resume() {
           <div className="resume-preview">
             <div className="resume-placeholder">
               <div className="placeholder-icon">📄</div>
-              <p>Suyog_Resume.pdf</p>
+              <p><a href="https://drive.google.com/file/d/1bHRnmig9nIyIUhKWdGG4m3WgpI5wPgvU/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Suyog_Resume.pdf</a></p>
               <span>Cloud SRE Engineer </span>
             </div>
           </div>
