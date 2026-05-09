@@ -9,7 +9,7 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <p>
-            Made with ❤️ by <span className="footer-name">Suyog J</span>
+            Made with ❤️ by <span className="footer-name"> JSuyog</span>
           </p>
           <p className="footer-credit">
             Built with <span className="footer-highlight">Claude</span>
