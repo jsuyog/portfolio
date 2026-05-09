@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Highlight from './components/Highlight';
@@ -21,6 +22,7 @@ function App() {
   };
 
   return (
+    <HashRouter>
     <div className="App">
       <Navigation onNavigate={scrollToSection} activeSection={activeSection} />
       <main>
@@ -45,6 +47,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </HashRouter>
   );
 }
 
