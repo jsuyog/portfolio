@@ -22,7 +22,6 @@ function App() {
   };
 
   return (
-    <HashRouter>
     <div className="App">
       <Navigation onNavigate={scrollToSection} activeSection={activeSection} />
       <main>
@@ -47,7 +46,6 @@ function App() {
       </main>
       <Footer />
     </div>
-    </HashRouter>
   );
 }
 
