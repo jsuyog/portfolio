@@ -6,7 +6,7 @@ function Navigation({ onNavigate, activeSection, darkMode, setDarkMode }) {
     <nav className="navbar" data-theme={darkMode ? 'dark' : 'light'}>
       <div className="container navbar-wrapper">
         <div className="logo">
-          <h4 style={{ margin: 0, color: 'var(--text-dark)' }}>Suyog</h4>
+          <h4 style={{ margin: 0, color: 'var(--text-dark)' }}>JSuyog</h4>
         </div>
         <ul className="nav-links">
           <li>
